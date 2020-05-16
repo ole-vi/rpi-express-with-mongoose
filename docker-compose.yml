@@ -1,0 +1,13 @@
+version: "2"
+services:
+  web:
+    image: rpi-express  
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mongo
+  mongo:
+    image: treehouses/rpi-mongo 
+    ports:
+      -  "27017:27017"
+      -  "28017:28017"
