@@ -1,7 +1,7 @@
 version: "2"
 services:
   web:
-    image: rpi-express  
+    image: hirotochigi/rpi-express-with-mongoose
     ports:
       - "8080:8080"
     depends_on:
